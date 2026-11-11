@@ -25,8 +25,6 @@ builder.Services.AddDbContext<OrderDbContext>((services, options) =>
 
 builder.Services.AddScoped<OrderService>();
 
-ThisWillNotCompile();
-
 var app = builder.Build();
 
 if (!app.Environment.IsProduction())
